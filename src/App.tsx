@@ -1,24 +1,24 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Offer from "./components/Offer";
 import Features from "./components/Features";
+import Showcase from "./components/Showcase";
+import Securite from "./components/Securite";
+import APropos from "./components/APropos";
+import Testimonial from "./components/Testimonial";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
-import Unsubscribe from "./components/Unsubscribe";
 
 export default function App() {
-  // Si l'URL est /desinscription, on affiche la page de désinscription
-  if (window.location.pathname.startsWith("/desinscription")) {
-    return <Unsubscribe />;
-  }
-
   return (
     <div className="min-h-screen bg-cream text-ink">
       <Header />
       <main>
         <Hero />
-        <Offer />
         <Features />
+        <Showcase />
+        <Securite />
+        <APropos />
+        <Testimonial />
         <CTA />
       </main>
       <Footer />

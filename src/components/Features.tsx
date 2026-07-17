@@ -1,53 +1,60 @@
 import { motion } from "framer-motion";
 import {
+  FolderClosed,
   CalendarClock,
-  FolderHeart,
-  HandCoins,
-  Sparkles,
+  PieChart,
+  Leaf,
+  Bell,
+  Lock,
   type LucideIcon,
 } from "lucide-react";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 
-type Feature = {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-};
+type Feature = { icon: LucideIcon; title: string; description: string };
 
 const features: Feature[] = [
   {
-    icon: FolderHeart,
-    title: "Vos documents",
+    icon: FolderClosed,
+    title: "Vos documents, enfin organisés",
     description:
-      "Tous vos papiers importants centralisés, classés et retrouvés en quelques secondes.",
+      "Classement automatique, recherche instantanée : tout est à portée de main.",
   },
   {
     icon: CalendarClock,
-    title: "Vos échéances",
+    title: "Un copilote qui anticipe",
     description:
-      "Plus aucune date oubliée. Docalya vous prévient avant qu'il ne soit trop tard.",
+      "Démarches, échéances, renouvellements… Docalya pense à vous, avant vous.",
   },
   {
-    icon: HandCoins,
-    title: "Vos aides",
+    icon: PieChart,
+    title: "Un budget qui éclaire",
     description:
-      "Identifiez les aides auxquelles vous avez droit et ne laissez plus rien passer.",
+      "Une vision claire de vos revenus, dépenses et épargne. Aujourd'hui et demain.",
   },
   {
-    icon: Sparkles,
-    title: "Votre sérénité",
+    icon: Leaf,
+    title: "Les aides faites pour vous",
     description:
-      "Un esprit tranquille : votre administratif est sous contrôle, vous respirez.",
+      "Docalya détecte les aides auxquelles vous avez droit, sans que vous cherchiez.",
+  },
+  {
+    icon: Bell,
+    title: "Un agenda qui simplifie",
+    description:
+      "Toutes vos tâches et rendez-vous au même endroit, bien rangés, jamais oubliés.",
+  },
+  {
+    icon: Lock,
+    title: "Vos données sont protégées",
+    description:
+      "Chiffrement et confidentialité : vos données vous appartiennent, en toute confiance.",
   },
 ];
 
 export default function Features() {
   return (
-    <section
-      id="fonctionnalites"
-      className="px-5 py-10 sm:px-8 sm:py-24 2xl:max-w-[1400px] 2xl:mx-auto"
-    >
-      <div className="mx-auto max-w-7xl">
+    <section id="fonctionnalites" className="px-5 py-12 sm:px-8 sm:py-28">
+      <div className="mx-auto max-w-6xl">
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -55,12 +62,16 @@ export default function Features() {
           viewport={viewportOnce}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-extrabold tracking-[-0.025em] text-ink sm:text-4xl">
-            Tout votre administratif, au même endroit
+          <span aria-hidden="true" className="mx-auto flex h-9 w-9 items-center justify-center text-sage">
+            <Leaf className="h-5 w-5" strokeWidth={1.5} />
+          </span>
+          <h2 className="font-display mt-4 text-[2.1rem] font-medium leading-[1.1] text-ink sm:text-[3rem]">
+            Tout ce qui compte,
+            <br className="hidden sm:block" /> réuni <span className="text-sage-deep">au même endroit.</span>
           </h2>
-          <p className="mt-4 text-lg text-ink-soft">
-            Quatre piliers pour reprendre la main, sans effort et en toute
-            confiance.
+          <p className="mx-auto mt-5 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
+            Un espace unique qui comprend votre situation, anticipe vos besoins et
+            simplifie votre quotidien.
           </p>
         </motion.div>
 
@@ -69,23 +80,17 @@ export default function Features() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-8 grid gap-4 sm:mt-14 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-10 sm:mt-16 grid gap-x-8 gap-y-9 sm:gap-y-12 text-center sm:grid-cols-3"
         >
           {features.map(({ icon: Icon, title, description }) => (
-            <motion.li
-              key={title}
-              variants={fadeUp}
-              whileHover={{ y: -6 }}
-              transition={{ type: "spring", stiffness: 300, damping: 22 }}
-              className="group rounded-[28px] border border-beige/70 bg-cream p-5 shadow-soft transition-shadow duration-300 hover:shadow-float sm:p-7"
-            >
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-wash text-green transition-colors duration-300 group-hover:bg-green group-hover:text-cream">
-                <Icon className="h-6 w-6" strokeWidth={2} aria-hidden="true" />
+            <motion.li key={title} variants={fadeUp} className="flex flex-col items-center px-2">
+              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-beige-deep bg-cream text-ink">
+                <Icon className="h-[22px] w-[22px]" strokeWidth={1.4} aria-hidden="true" />
               </span>
-              <h3 className="mt-5 text-lg font-bold tracking-[-0.01em] text-ink">
+              <h3 className="mt-5 text-[1.02rem] font-semibold tracking-[-0.01em] text-ink">
                 {title}
               </h3>
-              <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
+              <p className="mt-2.5 max-w-[15rem] text-[14px] leading-relaxed text-ink-soft">
                 {description}
               </p>
             </motion.li>

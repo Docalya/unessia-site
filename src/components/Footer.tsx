@@ -1,49 +1,49 @@
 import { motion } from "framer-motion";
-import { Heart, Lock, ShieldCheck, type LucideIcon } from "lucide-react";
+import { ShieldCheck, Lock, MapPin, type LucideIcon } from "lucide-react";
 import { APP_URL } from "../config";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 
 type Badge = { icon: LucideIcon; label: string };
 
 const badges: Badge[] = [
-  { icon: ShieldCheck, label: "Sécurisé" },
-  { icon: Lock, label: "Confidentiel" },
-  { icon: Heart, label: "Pensé pour votre quotidien" },
+  { icon: ShieldCheck, label: "Documents sécurisés" },
+  { icon: Lock, label: "100 % confidentiel" },
+  { icon: MapPin, label: "Hébergé en France" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-beige/70 bg-cream-deep px-5 py-8 sm:px-8 sm:py-16">
-      <div className="mx-auto max-w-7xl">
+    <footer className="border-t border-beige-deep/70 px-5 py-14 sm:px-8">
+      <div className="mx-auto max-w-6xl">
         <motion.ul
           variants={stagger}
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4"
+          className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-8"
         >
           {badges.map(({ icon: Icon, label }) => (
             <motion.li
               key={label}
               variants={fadeUp}
-              className="inline-flex items-center gap-2 rounded-full border border-beige-deep bg-cream px-4 py-2 text-sm font-semibold text-ink-soft shadow-soft"
+              className="inline-flex items-center gap-2 text-[13.5px] text-ink-soft"
             >
-              <Icon className="h-4 w-4 text-green" strokeWidth={2.2} aria-hidden="true" />
+              <Icon className="h-4 w-4 text-ink-muted" strokeWidth={1.6} aria-hidden="true" />
               {label}
             </motion.li>
           ))}
         </motion.ul>
 
-        <div className="mt-12 flex flex-col items-center gap-4 border-t border-beige pt-8 sm:flex-row sm:justify-between">
-          <span className="text-sm font-bold uppercase tracking-[0.32em] text-ink">
+        <div className="mt-12 flex flex-col items-center gap-4 border-t border-beige-deep/60 pt-8 sm:flex-row sm:justify-between">
+          <span className="font-display text-[15px] font-medium tracking-[0.02em] text-ink">
             Docalya
           </span>
-          <p className="text-sm text-ink-muted">
+          <p className="text-[13px] text-ink-muted">
             © {new Date().getFullYear()} Docalya. Tous droits réservés.
           </p>
           <a
             href={APP_URL}
-            className="text-sm font-semibold text-green transition-colors hover:text-forest"
+            className="text-[13.5px] font-medium text-ink-soft transition-colors hover:text-ink"
           >
             Accéder à l'application
           </a>
