@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Lock, MapPin, type LucideIcon } from "lucide-react";
-import { APP_URL } from "../config";
+import { APP_URL, LEGAL_LINKS } from "../config";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 
 type Badge = { icon: LucideIcon; label: string };
@@ -34,7 +34,17 @@ export default function Footer() {
           ))}
         </motion.ul>
 
-        <div className="mt-12 flex flex-col items-center gap-4 border-t border-beige-deep/60 pt-8 sm:flex-row sm:justify-between">
+        <ul className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-beige-deep/60 pt-8">
+          {LEGAL_LINKS.map((l) => (
+            <li key={l.href}>
+              <a href={l.href} className="text-[13px] text-ink-muted transition-colors hover:text-ink">
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-8 flex flex-col items-center gap-4 pt-2 sm:flex-row sm:justify-between">
           <span className="font-display text-[15px] font-medium tracking-[0.02em] text-ink">
             Docalya
           </span>
