@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Lock, EyeOff, MapPin, type LucideIcon } from "lucide-react";
+import { ShieldCheck, Lock, EyeOff, MapPin, Cpu, type LucideIcon } from "lucide-react";
 import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 
 type Point = { icon: LucideIcon; title: string; text: string };
@@ -24,6 +24,11 @@ const points: Point[] = [
     icon: MapPin,
     title: "Hébergé en France",
     text: "Vos informations restent en France, dans le respect du RGPD.",
+  },
+  {
+    icon: Cpu,
+    title: "Analyse 100 % locale",
+    text: "Docalya lit et classe vos documents sur sa propre infrastructure. Leur contenu n'est jamais envoyé à un service d'intelligence artificielle tiers.",
   },
 ];
 
@@ -58,11 +63,11 @@ export default function Securite() {
           viewport={viewportOnce}
           className="mt-14 grid gap-4 sm:grid-cols-2"
         >
-          {points.map(({ icon: Icon, title, text }) => (
+          {points.map(({ icon: Icon, title, text }, i) => (
             <motion.li
               key={title}
               variants={fadeUp}
-              className="flex gap-4 rounded-card border border-beige-deep/70 bg-cream p-7"
+              className={`flex gap-4 rounded-card border border-beige-deep/70 bg-cream p-7 ${i === points.length - 1 && points.length % 2 === 1 ? "sm:col-span-2" : ""}`}
             >
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-beige-deep bg-cream-deep text-ink">
                 <Icon className="h-[18px] w-[18px]" strokeWidth={1.5} aria-hidden="true" />
