@@ -3,7 +3,7 @@
 /* ============================================================
    Docalya — Design tokens
    Palette : blanc cassé · crème · sable — encre chaude
-   Typo unique : Quicksand (police ronde de l'app) pour la cohérence de marque
+   Typo unique : Nunito (police de l'app) pour la cohérence de marque
    ============================================================ */
 @theme {
   --color-cream: #fbfaf6;
@@ -18,8 +18,8 @@
   --color-ink-soft: #6e6a60;
   --color-ink-muted: #9a9488;
 
-  --font-sans: "Baloo 2", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-display: "Baloo 2", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Nunito", ui-sans-serif, system-ui, sans-serif;
 
   --radius-card: 26px;
   --radius-soft: 20px;
@@ -43,7 +43,7 @@ body {
   letter-spacing: -0.005em;
 }
 
-/* Titres : même police (Quicksand), léger resserrement */
+/* Titres : même police (Nunito), léger resserrement */
 .font-display {
   letter-spacing: -0.02em;
 }
