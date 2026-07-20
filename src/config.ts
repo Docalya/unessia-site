@@ -18,10 +18,10 @@ export const NAV_LINKS = [
 
 /** Pages légales (servies en statique par la landing, accessibles sans compte). */
 export const LEGAL_LINKS = [
-  { label: "Mentions légales",  href: "/mentions-legales" },
-  { label: "Confidentialité",   href: "/confidentialite" },
-  { label: "CGU",               href: "/cgu" },
-  { label: "CGV",               href: "/cgv" },
-  { label: "Remboursement",     href: "/remboursement" },
-  { label: "Aide",              href: "/aide" },
+  { label: "Mentions légales",  href: "/mentions-legales.html" },
+  { label: "Confidentialité",   href: "/confidentialite.html" },
+  { label: "CGU",               href: "/cgu.html" },
+  { label: "CGV",               href: "/cgv.html" },
+  { label: "Remboursement",     href: "/remboursement.html" },
+  { label: "Aide",              href: "/aide.html" },
 ] as const;
