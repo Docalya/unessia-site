@@ -22,8 +22,8 @@ const points: Point[] = [
   },
   {
     icon: MapPin,
-    title: "Hébergé en France",
-    text: "Vos informations restent en France, dans le respect du RGPD.",
+    title: "Hébergé en Europe",
+    text: "Vos documents sont hébergés dans l'Union européenne, dans le respect du RGPD.",
   },
   {
     icon: Cpu,
