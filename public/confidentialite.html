@@ -131,6 +131,8 @@
     <p>Les prestataires externes suivants, indispensables au fonctionnement du service, reçoivent une partie limitée de vos données :</p>
     <ul>
       <li><strong>Stripe</strong> — traite vos informations de paiement lors de la souscription à un forfait payant depuis notre site web. Docalya ne stocke jamais vos coordonnées bancaires.</li>
+      <li><strong>Apple</strong> — traite les paiements effectués par achat intégré depuis l'application iOS et gère les abonnements souscrits par ce canal. Docalya reçoit uniquement la confirmation de votre abonnement et n'a jamais accès à vos coordonnées bancaires.</li>
+      <li><strong>RevenueCat</strong> — reçoit un identifiant de compte et les informations relatives à votre abonnement (formule, date de renouvellement, statut), afin d'unifier la gestion de votre abonnement entre le site web et l'application iOS. Aucun contenu de vos documents ne lui est transmis.</li>
       <li><strong>Resend</strong> — reçoit votre adresse email et votre prénom, uniquement pour l'envoi des emails du service (confirmation de compte, réponses au support, récapitulatif mensuel).</li>
       <li><strong>ip-api.com</strong> — reçoit votre adresse IP, uniquement pour vous permettre de consulter et gérer vos sessions de connexion actives depuis vos paramètres de sécurité.</li>
       <li><strong>Base Adresse Nationale</strong> (api-adresse.data.gouv.fr, service public opéré par la DINUM et l'IGN) — reçoit uniquement le texte d'adresse que vous saisissez, lorsque vous complétez une adresse dans votre profil, une tâche ou un événement, afin de vous proposer des adresses réelles et de la valider. Aucune autre donnée personnelle ou financière ne lui est transmise.</li>
@@ -140,7 +142,7 @@
 
   <div class="card">
     <div class="head"><div class="num">10</div><h2>Transferts de données hors Union européenne</h2></div>
-    <p>Vos données sont hébergées au sein de l'Union européenne (Francfort, Allemagne). Certains de nos sous-traitants (Stripe, Resend, ip-api.com) peuvent toutefois traiter une partie limitée de vos données (adresse email, adresse IP, informations de paiement) depuis des pays situés hors de l'Union européenne, notamment les États-Unis. Ces transferts sont encadrés par les garanties appropriées prévues par le RGPD, telles que les clauses contractuelles types adoptées par la Commission européenne.</p>
+    <p>Vos données sont hébergées au sein de l'Union européenne (Francfort, Allemagne). Certains de nos sous-traitants (Stripe, Resend, ip-api.com, Apple, RevenueCat) peuvent toutefois traiter une partie limitée de vos données (adresse email, adresse IP, informations de paiement, statut d'abonnement) depuis des pays situés hors de l'Union européenne, notamment les États-Unis. Ces transferts sont encadrés par les garanties appropriées prévues par le RGPD, telles que les clauses contractuelles types adoptées par la Commission européenne.</p>
   </div>
 
   <div class="card">
@@ -184,18 +186,3 @@
 </div>
 </body>
 </html>
-
-<!--
-  À AJOUTER LORS DE LA MISE EN PLACE DE L'ACHAT INTÉGRÉ iOS (section 9) :
-
-  <li><strong>Apple</strong> — traite les paiements effectués via l'achat intégré
-  sur iOS. Docalya reçoit uniquement la confirmation de votre abonnement et
-  n'a jamais accès à vos coordonnées bancaires.</li>
-
-  <li><strong>RevenueCat</strong> — reçoit un identifiant de compte anonyme et
-  les informations relatives à votre abonnement (formule, date de renouvellement),
-  afin de gérer l'état de votre abonnement entre les plateformes. Aucune donnée
-  de vos documents ni information financière personnelle ne lui est transmise.</li>
-
-  Et compléter la section 10 : RevenueCat traite des données depuis les États-Unis.
--->
