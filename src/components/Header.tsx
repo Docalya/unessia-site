@@ -7,7 +7,7 @@ function LeafMark() {
   return (
     <img
       src="/logo-docalya.png"
-      alt="Docalya"
+      alt="Unessia"
       width="36"
       height="36"
       className="h-9 w-9 rounded-[11px] border border-beige-deep object-cover"
@@ -30,10 +30,10 @@ export default function Header() {
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-8"
       >
         {/* Logo */}
-        <a href="#top" className="flex items-center gap-2.5" aria-label="Docalya — accueil">
+        <a href="#top" className="flex items-center gap-2.5" aria-label="Unessia — accueil">
           <LeafMark />
           <span className="text-[15px] font-semibold uppercase tracking-[0.28em] text-ink">
-            Docalya
+            Unessia
           </span>
         </a>
 

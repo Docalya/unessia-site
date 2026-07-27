@@ -1,9 +1,9 @@
 // ============================================================
-// Docalya — Configuration centrale
+// Unessia — Configuration centrale
 // ============================================================
 
 /** URL de l'application (toutes les CTA pointent ici). */
-export const APP_URL = "https://app.docalya.fr";
+export const APP_URL = "https://app.unessia.fr";
 
 /** Libellé du bouton principal, cohérent sur toute la page. */
 export const CTA_LABEL = "Créer mon compte";

@@ -23,7 +23,7 @@ const features: Feature[] = [
     icon: CalendarClock,
     title: "Un copilote qui anticipe",
     description:
-      "Démarches, échéances, renouvellements… Docalya pense à vous, avant vous.",
+      "Démarches, échéances, renouvellements… Unessia pense à vous, avant vous.",
   },
   {
     icon: PieChart,
@@ -35,7 +35,7 @@ const features: Feature[] = [
     icon: Leaf,
     title: "Les aides faites pour vous",
     description:
-      "Docalya détecte les aides auxquelles vous avez droit, sans que vous cherchiez.",
+      "Unessia détecte les aides auxquelles vous avez droit, sans que vous cherchiez.",
   },
   {
     icon: Bell,

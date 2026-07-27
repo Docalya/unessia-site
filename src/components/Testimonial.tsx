@@ -16,7 +16,7 @@ export default function Testimonial() {
             &ldquo;
           </span>
           <p className="font-display -mt-4 text-[1.5rem] font-medium leading-[1.35] text-ink sm:text-[1.95rem]">
-            Grâce à Docalya, je me sens enfin organisée et sereine. Tout est clair,
+            Grâce à Unessia, je me sens enfin organisée et sereine. Tout est clair,
             rien ne m'échappe plus.
           </p>
           <p className="mt-7 text-[14px] font-medium text-ink-soft">— Julie, 34 ans</p>

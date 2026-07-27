@@ -28,7 +28,7 @@ const points: Point[] = [
   {
     icon: Cpu,
     title: "Analyse 100 % locale",
-    text: "Docalya lit et classe vos documents sur sa propre infrastructure. Leur contenu n'est jamais envoyé à un service d'intelligence artificielle tiers.",
+    text: "Unessia lit et classe vos documents sur sa propre infrastructure. Leur contenu n'est jamais envoyé à un service d'intelligence artificielle tiers.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function Securite() {
           </h2>
           <p className="mt-5 max-w-lg text-[1.05rem] leading-relaxed text-ink-soft">
             La sérénité commence par la certitude que vos documents sont en
-            sécurité. C'est la première promesse de Docalya.
+            sécurité. C'est la première promesse de Unessia.
           </p>
         </motion.div>
 

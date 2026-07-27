@@ -1,6 +1,6 @@
-# Docalya — Landing page
+# Unessia — Landing page
 
-Landing page premium (style Apple / Linear / Stripe) pour Docalya.
+Landing page premium (style Apple / Linear / Stripe) pour Unessia.
 
 ## Stack
 React 19 · Vite · TypeScript · Tailwind CSS v4 · Framer Motion · Lucide React
@@ -33,7 +33,7 @@ src/
 
 ## Configuration rapide — `src/config.ts`
 ```ts
-export const APP_URL    = "https://app.docalya.fr"; // cible de toutes les CTA
+export const APP_URL    = "https://app.unessia.fr"; // cible de toutes les CTA
 export const SPOTS_TOTAL = 15;  // places totales
 export const SPOTS_TAKEN = 5;   // places prises
 // SPOTS_LEFT est calculé automatiquement

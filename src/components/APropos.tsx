@@ -17,7 +17,7 @@ export default function APropos() {
         </span>
         <p className="font-display mt-6 text-[1.7rem] font-medium leading-[1.35] text-ink sm:text-[2.2rem]">
           Nous croyons que gérer sa vie administrative ne devrait demander ni
-          temps, ni angoisse, ni expertise. Docalya est né d'une idée simple :
+          temps, ni angoisse, ni expertise. Unessia est né d'une idée simple :
           remettre de l'ordre et de la <span className="text-sage-deep">sérénité</span> dans le
           quotidien de chacun.
         </p>

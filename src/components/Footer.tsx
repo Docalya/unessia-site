@@ -46,10 +46,10 @@ export default function Footer() {
 
         <div className="mt-8 flex flex-col items-center gap-4 pt-2 sm:flex-row sm:justify-between">
           <span className="font-display text-[15px] font-medium tracking-[0.02em] text-ink">
-            Docalya
+            Unessia
           </span>
           <p className="text-[13px] text-ink-muted">
-            © {new Date().getFullYear()} Docalya. Tous droits réservés.
+            © {new Date().getFullYear()} Unessia. Tous droits réservés.
           </p>
           <a
             href={APP_URL}

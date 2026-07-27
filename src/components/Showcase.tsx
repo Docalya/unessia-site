@@ -40,7 +40,7 @@ export default function Showcase() {
               Conçu pour vous <span className="text-sage-deep">simplifier la vie.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-5 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
-              Docalya s'adapte à vous. En quelques minutes, il comprend votre
+              Unessia s'adapte à vous. En quelques minutes, il comprend votre
               situation et vous accompagne, pas à pas.
             </motion.p>
             <motion.ul variants={fadeUp} className="mt-8 space-y-3.5">
@@ -54,7 +54,7 @@ export default function Showcase() {
               ))}
             </motion.ul>
             <motion.a variants={fadeUp} href={APP_URL} className="group mt-9 inline-flex items-center gap-1.5 text-[15px] font-medium text-ink transition-colors hover:text-sage-deep">
-              Découvrir Docalya
+              Découvrir Unessia
               <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">→</span>
             </motion.a>
           </motion.div>
@@ -66,7 +66,7 @@ export default function Showcase() {
             viewport={viewportOnce}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Phone src="/app/accueil.jpg" alt="Écran d'accueil de Docalya : point sérénité et actions rapides." />
+            <Phone src="/app/accueil.jpg" alt="Écran d'accueil de Unessia : point sérénité et actions rapides." />
           </motion.div>
         </div>
 

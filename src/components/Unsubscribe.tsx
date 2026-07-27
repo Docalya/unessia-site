@@ -25,7 +25,7 @@ export default function Unsubscribe() {
       .then(data => {
         if (data.ok) {
           setStatus("ok");
-          setMessage("Vous êtes désinscrit du récap hebdomadaire. Vous pouvez le réactiver à tout moment dans les préférences de notification de votre espace Docalya.");
+          setMessage("Vous êtes désinscrit du récap hebdomadaire. Vous pouvez le réactiver à tout moment dans les préférences de notification de votre espace Unessia.");
         } else {
           setStatus("error");
           setMessage(data.error ?? "Ce lien n'est pas valide ou a expiré.");
@@ -40,14 +40,14 @@ export default function Unsubscribe() {
   return (
     <div style={{ minHeight: "100vh", background: "#FBF7EF", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px", fontFamily: "Arial, Helvetica, sans-serif" }}>
       <div style={{ maxWidth: 460, width: "100%", background: "#FFFFFF", borderRadius: 20, border: "1px solid #EFE5D8", padding: "40px 32px", textAlign: "center" }}>
-        <img src="/logo-docalya.png" width={44} height={44} alt="Docalya" style={{ display: "inline-block" }} />
-        <div style={{ fontSize: 24, letterSpacing: 5, fontWeight: 600, marginTop: 12, color: "#2F302F" }}>DOCALYA</div>
+        <img src="/logo-docalya.png" width={44} height={44} alt="Unessia" style={{ display: "inline-block" }} />
+        <div style={{ fontSize: 24, letterSpacing: 5, fontWeight: 600, marginTop: 12, color: "#2F302F" }}>UNESSIA</div>
         <div style={{ fontSize: 40, margin: "24px 0 8px" }}>
           {status === "loading" ? "⏳" : status === "ok" ? "✅" : "⚠️"}
         </div>
         <p style={{ fontSize: 16, lineHeight: 1.6, color: "#444", margin: 0 }}>{message}</p>
-        <a href="https://app.docalya.fr" style={{ display: "inline-block", marginTop: 24, background: "#B98B53", color: "#FFFFFF", textDecoration: "none", padding: "13px 28px", borderRadius: 10, fontSize: 15, fontWeight: 700 }}>
-          Retour à Docalya
+        <a href="https://app.unessia.fr" style={{ display: "inline-block", marginTop: 24, background: "#B98B53", color: "#FFFFFF", textDecoration: "none", padding: "13px 28px", borderRadius: 10, fontSize: 15, fontWeight: 700 }}>
+          Retour à Unessia
         </a>
       </div>
     </div>

@@ -32,7 +32,7 @@ export default function Hero() {
             variants={fadeUp}
             className="mt-7 max-w-md text-[1.05rem] leading-relaxed text-ink-soft"
           >
-            Docalya réunit vos documents, votre budget et vos démarches au même
+            Unessia réunit vos documents, votre budget et vos démarches au même
             endroit. Il anticipe, vous guide et vous fait gagner du temps, chaque
             jour.
           </motion.p>

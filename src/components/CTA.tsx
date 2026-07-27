@@ -18,7 +18,7 @@ export default function CTA() {
           en toute <span className="text-sage-deep">sérénité.</span>
         </h2>
         <p className="mx-auto mt-6 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
-          Ouvrez Docalya et laissez votre vie administrative se mettre en ordre.
+          Ouvrez Unessia et laissez votre vie administrative se mettre en ordre.
         </p>
         <a
           href={APP_URL}

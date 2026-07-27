@@ -5,11 +5,11 @@ const steps = [
   {
     n: "01",
     title: "Déposez",
-    text: "Ajoutez un document, ou laissez Docalya le comprendre à votre place. Rien à trier, rien à nommer.",
+    text: "Ajoutez un document, ou laissez Unessia le comprendre à votre place. Rien à trier, rien à nommer.",
   },
   {
     n: "02",
-    title: "Docalya s'organise",
+    title: "Unessia s'organise",
     text: "Il classe, relie vos papiers à votre budget, repère les échéances et ce qui mérite votre attention.",
   },
   {
