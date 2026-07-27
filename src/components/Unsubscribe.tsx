@@ -40,7 +40,7 @@ export default function Unsubscribe() {
   return (
     <div style={{ minHeight: "100vh", background: "#FBF7EF", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px", fontFamily: "Arial, Helvetica, sans-serif" }}>
       <div style={{ maxWidth: 460, width: "100%", background: "#FFFFFF", borderRadius: 20, border: "1px solid #EFE5D8", padding: "40px 32px", textAlign: "center" }}>
-        <img src="/logo-docalya.png" width={44} height={44} alt="Unessia" style={{ display: "inline-block" }} />
+        <img src="/logo-unessia.png" width={44} height={44} alt="Unessia" style={{ display: "inline-block" }} />
         <div style={{ fontSize: 24, letterSpacing: 5, fontWeight: 600, marginTop: 12, color: "#2F302F" }}>UNESSIA</div>
         <div style={{ fontSize: 40, margin: "24px 0 8px" }}>
           {status === "loading" ? "⏳" : status === "ok" ? "✅" : "⚠️"}

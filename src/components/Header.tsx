@@ -6,7 +6,7 @@ import { APP_URL, CTA_LABEL, NAV_LINKS } from "../config";
 function LeafMark() {
   return (
     <img
-      src="/logo-docalya.png"
+      src="/logo-unessia.png"
       alt="Unessia"
       width="36"
       height="36"
