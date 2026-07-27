@@ -18,7 +18,7 @@ npm run lint     # 0 warning / 0 erreur
 src/
 ├── assets/
 ├── components/
-│   ├── Header.tsx     Logo DOCALYA · Se connecter · Demander mon accès
+│   ├── Header.tsx     Logo UNESSIA · Se connecter · Demander mon accès
 │   ├── Hero.tsx       Titre "apaisé" · image sereine · carte flottante
 │   ├── Offer.tsx      Bandeau offre de lancement + compteur
 │   ├── Features.tsx   4 cartes (documents, échéances, aides, sérénité)
