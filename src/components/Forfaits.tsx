@@ -96,7 +96,8 @@ export default function Forfaits() {
             <br className="hidden sm:block" /> changez d'avis <span className="text-sage-deep">quand vous voulez.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
-            Sans engagement, résiliable à tout moment.
+            Sans engagement, résiliable à tout moment. Vous choisissez votre forfait
+            sur le web, et vous retrouvez votre compte sur l'application iPhone.
           </p>
         </motion.div>
 
@@ -152,11 +153,11 @@ export default function Forfaits() {
                     : "border border-beige-deep bg-cream-deep text-ink hover:bg-cream"
                 }`}
               >
-                {f.cle === "gratuit" ? "Créer mon compte" : `Choisir ${f.nom}`}
+                Créer mon compte
               </a>
 
-              <p className="mt-3 text-center text-[11.5px] text-ink-muted">
-                {f.cle === "gratuit" ? "Sans carte bancaire" : "Paiement via l'App Store"}
+              <p className="mt-3 text-center text-[11.5px] leading-snug text-ink-muted">
+                Sur le web, puis retrouvez tout dans l'application
               </p>
             </motion.li>
           ))}
