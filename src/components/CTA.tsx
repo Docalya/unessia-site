@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { APP_URL, CTA_LABEL } from "../config";
+import { APP_URL } from "../config";
 import { fadeUp, viewportOnce } from "../lib/motion";
 
 export default function CTA() {
