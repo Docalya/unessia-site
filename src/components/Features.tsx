@@ -29,13 +29,13 @@ const features: Feature[] = [
     icon: PieChart,
     title: "Un budget qui éclaire",
     description:
-      "Une vision claire de vos revenus, dépenses et épargne. Aujourd'hui et demain.",
+      "Une vision claire de vos revenus et de vos dépenses. Aujourd'hui et demain.",
   },
   {
     icon: Leaf,
     title: "Les aides faites pour vous",
     description:
-      "Unessia détecte les aides auxquelles vous avez droit, sans que vous cherchiez.",
+      "Unessia repère les aides auxquelles vous auriez droit, sans que vous cherchiez.",
   },
   {
     icon: Bell,

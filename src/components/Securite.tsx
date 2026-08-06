@@ -51,8 +51,8 @@ export default function Securite() {
             Vos papiers méritent la confiance.
           </h2>
           <p className="mt-5 max-w-lg text-[1.05rem] leading-relaxed text-ink-soft">
-            Une pièce d'identité, une ordonnance, un avis d'imposition. Ce que vous
-            déposez ici ne ressemble à rien d'autre — et n'est traité comme nulle part ailleurs.
+            Une pièce d'identité, une ordonnance, un avis d'imposition. Des papiers
+            ordinaires — traités comme nulle part ailleurs.
           </p>
         </motion.div>
 

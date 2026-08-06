@@ -16,10 +16,10 @@ export default function APropos() {
           À propos
         </span>
         <p className="font-display mt-6 text-[1.7rem] font-medium leading-[1.35] text-ink sm:text-[2.2rem]">
-          Nous croyons que gérer sa vie administrative ne devrait demander ni
-          temps, ni angoisse, ni expertise. Unessia est né d'une idée simple :
-          remettre de l'ordre et de la <span className="text-sage-deep">sérénité</span> dans le
-          quotidien de chacun.
+          Nous croyons que gérer sa vie administrative et quotidienne ne devrait
+          demander ni angoisse, ni expertise, ni des heures de votre temps. Unessia
+          est né d'une idée simple : remettre de l'ordre et de la{" "}
+          <span className="text-sage-deep">sérénité</span> dans le quotidien de chacun.
         </p>
         <p className="mx-auto mt-6 max-w-xl text-[1.05rem] leading-relaxed text-ink-soft">
           Un espace clair, intelligent et respectueux de vos données — pensé pour

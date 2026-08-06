@@ -23,9 +23,9 @@ export default function Hero() {
             variants={fadeUp}
             className="font-display text-[2.9rem] font-medium leading-[1.04] text-ink sm:text-[4.3rem]"
           >
-            Photographiez un papier.
+            S'organiser
             <br />
-            Le reste <span className="text-sage-deep">se range seul.</span>
+            en toute <span className="text-sage-deep">sérénité.</span>
           </motion.h1>
 
           <motion.p
@@ -56,7 +56,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.p variants={fadeUp} className="mt-5 text-[13.5px] text-ink-muted">
-            Sans carte bancaire · Vos documents restent en France
+            Vos documents restent en France
           </motion.p>
         </motion.div>
       </div>

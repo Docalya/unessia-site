@@ -17,8 +17,8 @@ export default function Testimonial() {
             Notre engagement
           </span>
           <p className="font-display mt-5 text-[1.5rem] font-medium leading-[1.35] text-ink sm:text-[1.95rem]">
-            Vos papiers ne quitteront jamais la France, et ne seront jamais lus par
-            une intelligence artificielle qui ne nous appartient pas.
+            Vos papiers ne quittent pas la France, et ne sont jamais lus par une
+            intelligence artificielle qui ne nous appartient pas.
           </p>
           <p className="mt-5 text-[14.5px] leading-relaxed text-ink-soft">
             C'est la contrainte que nous nous sommes donnée dès le premier jour. Elle

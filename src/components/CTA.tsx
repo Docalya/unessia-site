@@ -18,8 +18,8 @@ export default function CTA() {
           en toute <span className="text-sage-deep">sérénité.</span>
         </h2>
         <p className="mx-auto mt-5 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
-          Créez votre compte, déposez une facture, et voyez ce qu'il en sort.
-          Vous saurez tout de suite si c'est fait pour vous.
+          Créez votre compte et voyez ce qu'il en ressort. Vous saurez tout de
+          suite si c'est fait pour vous.
         </p>
         <a
           href={APP_URL}
@@ -28,7 +28,7 @@ export default function CTA() {
           Créer mon compte gratuitement
         </a>
         <p className="mt-4 text-[13.5px] text-ink-muted">
-          Gratuit, sans carte bancaire · Application iPhone disponible
+          Application iPhone disponible
         </p>
       </motion.div>
     </section>

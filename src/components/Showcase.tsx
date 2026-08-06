@@ -81,7 +81,7 @@ export default function Showcase() {
         >
           {gallery.map((s) => (
             <motion.div key={s.label} variants={fadeUp} className="flex flex-col items-center">
-              <Phone src={s.src} alt={s.alt} className="max-w-[230px]" />
+              <Phone src={s.src} alt={s.alt} className="max-w-[270px]" />
               <span className="mt-6 text-[12px] font-semibold uppercase tracking-[0.14em] text-ink-soft">
                 {s.label}
               </span>
