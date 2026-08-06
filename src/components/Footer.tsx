@@ -8,7 +8,7 @@ type Badge = { icon: LucideIcon; label: string };
 const badges: Badge[] = [
   { icon: ShieldCheck, label: "Documents sécurisés" },
   { icon: Lock, label: "100 % confidentiel" },
-  { icon: MapPin, label: "Hébergé en Europe" },
+  { icon: MapPin, label: "Hébergé en France" },
 ];
 
 export default function Footer() {

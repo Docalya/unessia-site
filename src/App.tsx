@@ -2,7 +2,9 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Showcase from "./components/Showcase";
+import EspacePro from "./components/EspacePro";
 import Securite from "./components/Securite";
+import Forfaits from "./components/Forfaits";
 import APropos from "./components/APropos";
 import Testimonial from "./components/Testimonial";
 import CTA from "./components/CTA";
@@ -16,9 +18,11 @@ export default function App() {
         <Hero />
         <Features />
         <Showcase />
+        <EspacePro />
         <Securite />
-        <APropos />
+        <Forfaits />
         <Testimonial />
+        <APropos />
         <CTA />
       </main>
       <Footer />

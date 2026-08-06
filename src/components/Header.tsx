@@ -53,7 +53,8 @@ export default function Header() {
 
         {/* Actions — desktop */}
         <div className="hidden items-center gap-4 lg:flex">
-          <a href={APP_URL} className="text-[14.5px] text-ink-soft transition-colors hover:text-ink">
+          <a 
+          href={APP_URL} className="text-[14.5px] text-ink-soft transition-colors hover:text-ink">
             Se connecter
           </a>
           <a

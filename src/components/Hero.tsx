@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { APP_URL, CTA_LABEL } from "../config";
+import { APP_URL } from "../config";
 import { fadeUp, stagger } from "../lib/motion";
 
 export default function Hero() {
@@ -23,18 +23,18 @@ export default function Hero() {
             variants={fadeUp}
             className="font-display text-[2.9rem] font-medium leading-[1.04] text-ink sm:text-[4.3rem]"
           >
-            L'administration,
+            Photographiez un papier.
             <br />
-            enfin <span className="text-sage-deep">sereine.</span>
+            Le reste <span className="text-sage-deep">se range seul.</span>
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
-            className="mt-7 max-w-md text-[1.05rem] leading-relaxed text-ink-soft"
+            className="mt-5 max-w-md text-[1.05rem] leading-relaxed text-ink-soft"
           >
-            Unessia réunit vos documents, votre budget et vos démarches au même
-            endroit. Il anticipe, vous guide et vous fait gagner du temps, chaque
-            jour.
+            Unessia lit vos documents, les nomme, les classe, repère les échéances
+            et met votre budget à jour. Sans qu'ils soient jamais envoyés à une IA
+            extérieure.
           </motion.p>
 
           <motion.div
@@ -45,7 +45,7 @@ export default function Hero() {
               href={APP_URL}
               className="inline-flex items-center justify-center rounded-full bg-ink px-7 py-3.5 text-[15px] font-medium text-cream transition-all duration-200 hover:-translate-y-px hover:bg-black"
             >
-              {CTA_LABEL}
+              Créer mon compte gratuitement
             </a>
             <a
               href={APP_URL}
@@ -54,6 +54,10 @@ export default function Hero() {
               Se connecter
             </a>
           </motion.div>
+
+          <motion.p variants={fadeUp} className="mt-5 text-[13.5px] text-ink-muted">
+            Sans carte bancaire · Vos documents restent en France
+          </motion.p>
         </motion.div>
       </div>
     </section>

@@ -12,14 +12,18 @@ export default function Testimonial() {
         className="mx-auto grid max-w-6xl overflow-hidden rounded-xl border border-beige-deep/70 bg-cream-deep md:grid-cols-2"
       >
         <div className="flex flex-col justify-center p-8 sm:p-14">
-          <span aria-hidden="true" className="font-display text-6xl leading-none text-beige-deep">
-            &ldquo;
+          <span className="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-ink-soft">
+            <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-sage" />
+            Notre engagement
           </span>
-          <p className="font-display -mt-4 text-[1.5rem] font-medium leading-[1.35] text-ink sm:text-[1.95rem]">
-            Grâce à Unessia, je me sens enfin organisée et sereine. Tout est clair,
-            rien ne m'échappe plus.
+          <p className="font-display mt-5 text-[1.5rem] font-medium leading-[1.35] text-ink sm:text-[1.95rem]">
+            Vos papiers ne quitteront jamais la France, et ne seront jamais lus par
+            une intelligence artificielle qui ne nous appartient pas.
           </p>
-          <p className="mt-7 text-[14px] font-medium text-ink-soft">— Julie, 34 ans</p>
+          <p className="mt-5 text-[14.5px] leading-relaxed text-ink-soft">
+            C'est la contrainte que nous nous sommes donnée dès le premier jour. Elle
+            nous coûte cher en ingénierie. Elle n'est pas négociable.
+          </p>
         </div>
 
         <div className="relative min-h-[260px] md:min-h-full">

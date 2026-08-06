@@ -12,8 +12,9 @@ export const CTA_LABEL = "Créer mon compte";
 export const NAV_LINKS = [
   { label: "Fonctionnalités", href: "#fonctionnalites" },
   { label: "Comment ça marche", href: "#comment-ca-marche" },
+  { label: "Indépendants", href: "#espace-pro" },
   { label: "Sécurité", href: "#securite" },
-  { label: "À propos", href: "#a-propos" },
+  { label: "Tarifs", href: "#forfaits" },
 ] as const;
 
 /** Pages légales (servies en statique par la landing, accessibles sans compte). */

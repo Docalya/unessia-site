@@ -15,15 +15,15 @@ type Feature = { icon: LucideIcon; title: string; description: string };
 const features: Feature[] = [
   {
     icon: FolderClosed,
-    title: "Vos documents, enfin organisés",
+    title: "Nommés et rangés tout seuls",
     description:
-      "Classement automatique, recherche instantanée : tout est à portée de main.",
+      "« IMG_4417 » devient « Bulletin de paie — juillet 2026 », classé dans Travail.",
   },
   {
     icon: CalendarClock,
-    title: "Un copilote qui anticipe",
+    title: "Un papier, trois conséquences",
     description:
-      "Démarches, échéances, renouvellements… Unessia pense à vous, avant vous.",
+      "Une facture crée la tâche, inscrit la dépense au budget et pose le rappel.",
   },
   {
     icon: PieChart,
@@ -45,15 +45,15 @@ const features: Feature[] = [
   },
   {
     icon: Lock,
-    title: "Vos données sont protégées",
+    title: "Lus sans jamais être envoyés",
     description:
-      "Chiffrement et confidentialité : vos données vous appartiennent, en toute confiance.",
+      "Aucune IA externe ne voit vos papiers. Hébergement en France, accès journalisés.",
   },
 ];
 
 export default function Features() {
   return (
-    <section id="fonctionnalites" className="px-5 py-12 sm:px-8 sm:py-28">
+    <section id="fonctionnalites" className="px-5 py-9 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <motion.div
           variants={fadeUp}

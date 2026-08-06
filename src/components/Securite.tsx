@@ -6,35 +6,35 @@ type Point = { icon: LucideIcon; title: string; text: string };
 
 const points: Point[] = [
   {
+    icon: Cpu,
+    title: "Aucune intelligence artificielle tierce",
+    text: "La lecture de vos papiers commence sur votre appareil. Si elle échoue, le relais est notre propre serveur, en France, qui ne conserve rien. Le contenu de vos documents n'est transmis à aucun service extérieur — jamais.",
+  },
+  {
+    icon: MapPin,
+    title: "Hébergé en France",
+    text: "Vos documents sont stockés à Paris, sur une infrastructure européenne. Ils ne quittent pas le territoire.",
+  },
+  {
     icon: Lock,
-    title: "Chiffrement de bout en bout",
-    text: "Vos documents sont chiffrés au repos et en transit. Personne d'autre que vous n'y accède.",
+    title: "Chiffrés, et sous surveillance",
+    text: "Vos fichiers sont chiffrés au repos et en transit. Chaque ouverture passe par un lien temporaire de cinq minutes, et tous les accès sont consignés dans un journal que personne ne peut réécrire.",
   },
   {
     icon: EyeOff,
-    title: "Rien n'est revendu",
-    text: "Vos données vous appartiennent. Elles ne sont ni vendues, ni exploitées à des fins publicitaires.",
+    title: "Rien n'est mesuré, rien n'est revendu",
+    text: "Aucun traceur, aucune statistique d'usage, aucune publicité. Nous ne savons pas quelles pages vous consultez ni combien de temps vous restez.",
   },
   {
     icon: ShieldCheck,
     title: "Partage sous contrôle",
-    text: "Chaque lien de partage est à usage unique, filigrané et expirable. Vous décidez qui voit quoi.",
-  },
-  {
-    icon: MapPin,
-    title: "Hébergé en Europe",
-    text: "Vos documents sont hébergés dans l'Union européenne, dans le respect du RGPD.",
-  },
-  {
-    icon: Cpu,
-    title: "Analyse 100 % locale",
-    text: "Unessia lit et classe vos documents sur sa propre infrastructure. Leur contenu n'est jamais envoyé à un service d'intelligence artificielle tiers.",
+    text: "Chaque lien de partage est à usage unique, filigrané, protégé par mot de passe si vous le souhaitez, et expire au bout de 24 heures.",
   },
 ];
 
 export default function Securite() {
   return (
-    <section id="securite" className="px-5 py-12 sm:px-8 sm:py-28">
+    <section id="securite" className="px-5 py-9 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <motion.div
           variants={fadeUp}
@@ -51,8 +51,8 @@ export default function Securite() {
             Vos papiers méritent la confiance.
           </h2>
           <p className="mt-5 max-w-lg text-[1.05rem] leading-relaxed text-ink-soft">
-            La sérénité commence par la certitude que vos documents sont en
-            sécurité. C'est la première promesse de Unessia.
+            Une pièce d'identité, une ordonnance, un avis d'imposition. Ce que vous
+            déposez ici ne ressemble à rien d'autre — et n'est traité comme nulle part ailleurs.
           </p>
         </motion.div>
 

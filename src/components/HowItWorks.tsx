@@ -4,18 +4,18 @@ import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 const steps = [
   {
     n: "01",
-    title: "Déposez",
-    text: "Ajoutez un document, ou laissez Unessia le comprendre à votre place. Rien à trier, rien à nommer.",
+    title: "Créez votre compte",
+    text: "Une adresse email, quelques questions sur votre situation — logement, activité, foyer. Trois minutes, sans carte bancaire.",
   },
   {
     n: "02",
-    title: "Unessia s'organise",
-    text: "Il classe, relie vos papiers à votre budget, repère les échéances et ce qui mérite votre attention.",
+    title: "Déposez trois papiers",
+    text: "Une facture, un bulletin de paie, une attestation. Regardez-les se nommer, se ranger et alimenter votre agenda.",
   },
   {
     n: "03",
-    title: "Respirez",
-    text: "Votre vie administrative est à sa place. Vous gardez l'esprit libre pour le reste.",
+    title: "Installez l'application",
+    text: "Vous retrouvez tout sur votre téléphone, et vous gagnez l'essentiel : photographier un courrier dès qu'il arrive.",
   },
 ];
 
@@ -32,10 +32,10 @@ export default function HowItWorks() {
         >
           <span className="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-ink-soft">
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-sage" />
-            En trois temps
+            Trois minutes
           </span>
           <h2 className="font-display mt-5 text-[2.1rem] font-normal leading-[1.1] text-ink sm:text-[3rem]">
-            La sérénité, sans effort.
+            Commencez ici, continuez partout.
           </h2>
         </motion.div>
 
