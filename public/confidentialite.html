@@ -100,19 +100,56 @@
     <p>Les données personnelles des utilisateurs sont hébergées en France, via l'infrastructure Supabase, déployée sur Amazon Web Services (AWS) dans la région eu-west-3 (Paris). Le microservice qui lit vos documents lorsque cette lecture ne peut être effectuée sur votre appareil est hébergé chez OVH SAS, également en France. L'interface de l'application est distribuée par Vercel Inc. Ces prestataires sont soumis aux réglementations européennes en matière de protection des données.</p>
   </div>
 
+    <div class="card">
+    <div class="head"><div class="num">6</div><h2>Mesures de sécurité</h2></div>
+    <p>Cette section décrit les protections réellement en place, et non des intentions. Chacune est vérifiable : si vous souhaitez des précisions sur l'une d'elles, écrivez-nous.</p>
+
+    <h3>Chiffrement</h3>
+    <p>Vos documents et vos données sont chiffrés au repos par notre hébergeur, ainsi qu'en transit entre votre appareil et nos serveurs (TLS). Le stockage des fichiers est privé : aucun document n'est accessible par une adresse publique. Chaque ouverture passe par un lien temporaire, valable cinq minutes, généré à la demande et pour vous seul.</p>
+    <p><strong>Nous ne proposons pas de chiffrement de bout en bout</strong>, et nous préférons le dire clairement. Il serait incompatible avec la lecture automatique de vos documents : nos serveurs doivent pouvoir accéder au contenu pour le classer, en détecter les échéances et alimenter votre budget. Une application qui annonce à la fois le chiffrement de bout en bout et l'analyse automatique de vos papiers dit nécessairement une chose inexacte.</p>
+
+    <h3>Accès à votre compte</h3>
+    <ul>
+      <li>Double authentification par application d'authentification, avec codes de secours à usage unique.</li>
+      <li>Liste des appareils connectés à votre compte, consultable à tout moment, avec révocation immédiate à distance.</li>
+      <li>Limitation du nombre de tentatives de connexion et de réinitialisation de mot de passe, pour contrer les essais automatisés.</li>
+      <li>Les mots de passe ne sont jamais stockés en clair.</li>
+    </ul>
+
+    <h3>Journalisation des accès</h3>
+    <p>Chaque consultation, téléchargement, analyse, création, suppression ou partage d'un document est enregistré dans un journal : date, action, résultat, adresse IP. Les connexions, déconnexions, changements de mot de passe et révocations de session le sont également.</p>
+    <p>Ces journaux sont <strong>en écriture seule</strong> : ils ne peuvent être ni modifiés ni effacés, y compris par nous. Ils ne sont consultés qu'en cas d'incident de sécurité ou de demande d'exercice de vos droits, sont purgés automatiquement au bout de douze mois, et ne servent à aucune mesure d'audience.</p>
+
+    <h3>Sauvegardes</h3>
+    <p>Vos documents sont sauvegardés chaque nuit chez OVH SAS, à Paris, dans un conteneur privé et versionné. Ces sauvegardes sont <strong>chiffrées avec notre propre clé (AES-256-GCM) avant d'être transmises</strong> : notre prestataire de sauvegarde n'a accès à aucun contenu lisible. Elles sont conservées trente jours.</p>
+    <p>Une procédure de restauration est documentée, et sa capacité à fonctionner est vérifiée périodiquement — non pas supposée. La dernière vérification date du 5 août 2026 et a porté sur un échantillon de fichiers restaurés puis comparés à l'original, avec un résultat conforme.</p>
+
+    <h3>Partage de documents</h3>
+    <p>Un lien de partage est à usage unique, expire au bout de vingt-quatre heures, peut être protégé par un mot de passe, et le document transmis porte un filigrane à votre nom. Chaque téléchargement, réussi ou refusé, est journalisé.</p>
+
+    <h3>Suppression</h3>
+    <p>La suppression d'un document efface le fichier, ses métadonnées d'analyse et l'ensemble des données dérivées. La suppression de votre compte est immédiate, s'effectue depuis vos paramètres sans intervention de notre part, et n'est pas réversible. Vous pouvez exporter l'intégralité de vos données au préalable, dans un format réutilisable.</p>
+
+    <h3>Gestion des incidents</h3>
+    <p>Une procédure écrite de gestion des violations de données est en place. Elle prévoit la qualification de l'incident, sa notification à la CNIL dans les soixante-douze heures lorsque le règlement l'exige, l'information des personnes concernées lorsque le risque est élevé, et la conservation d'une trace de chaque incident dans un registre dédié. Un registre des traitements est également tenu, conformément à l'article 30 du règlement.</p>
+
+    <h3>Accès de notre côté</h3>
+    <p>Unessia est éditée par une entrepreneure individuelle : une seule personne dispose d'un accès administrateur à l'infrastructure. Cet accès est protégé par une double authentification et n'est utilisé que pour l'exploitation technique du service. Nous ne consultons pas le contenu de vos documents, et aucun processus automatisé ne le transmet à un tiers.</p>
+  </div>
+
   <div class="card">
-    <div class="head"><div class="num">6</div><h2>Ce qui reste dans l'application</h2></div>
+    <div class="head"><div class="num">7</div><h2>Ce qui reste dans l'application</h2></div>
     <p>Le contenu de vos documents importés (texte, images, montants, dates, catégories détectées) n'est jamais transmis à un service d'intelligence artificielle externe. La lecture de vos documents s'effectue directement sur votre appareil ; lorsque ce n'est pas possible, elle est confiée à nos serveurs situés en France. Le classement automatique s'exécute sur notre infrastructure française. Les données de votre espace professionnel (recettes, dépenses, contacts, estimations de cotisations et de TVA) sont traitées et stockées de la même manière, sur notre infrastructure française, et ne sont transmises à aucun service d'analyse externe. En dehors des exceptions strictement nécessaires listées ci-dessous, et des documents que vous choisissez explicitement de partager (voir « Partage de documents »), aucune donnée personnelle n'est transmise à un tiers.</p>
   </div>
 
     <div class="card">
-    <div class="head"><div class="num">7</div><h2>Ce que nous ne mesurons pas</h2></div>
+    <div class="head"><div class="num">8</div><h2>Ce que nous ne mesurons pas</h2></div>
     <p>Unessia n'intègre aucun outil d'analyse comportementale. Nous ne savons pas quelles pages vous consultez, combien de temps vous restez dans l'application, sur quels boutons vous appuyez, ni à quelle fréquence vous l'ouvrez. Aucune statistique d'usage n'est collectée, ni pour nous, ni pour un tiers.</p>
     <p>Les seules données techniques enregistrées concernent la sécurité de votre compte et de vos documents : type d'appareil, navigateur, système d'exploitation, adresse IP et date de dernière activité. Elles alimentent la liste de vos sessions actives, que vous pouvez consulter et révoquer à tout moment depuis vos paramètres de sécurité, ainsi que le journal des accès à vos documents décrit plus bas. Elles ne servent à établir aucun profil et ne sont transmises à personne.</p>
   </div>
 
 <div class="card">
-    <div class="head"><div class="num">8</div><h2>Amélioration du classement (mémoire)</h2></div>
+    <div class="head"><div class="num">9</div><h2>Amélioration du classement (mémoire)</h2></div>
     <p>Lorsque vous validez ou corrigez le classement d'un document, Unessia retient cette information afin de mieux vous proposer le bon classement la prochaine fois. Ce mécanisme fonctionne à deux niveaux :</p>
     <ul>
       <li><strong>Mémoire personnelle</strong> — vos corrections sont conservées dans votre espace et n'améliorent que vos propres suggestions. Elles ne sont partagées avec personne.</li>
@@ -122,7 +159,7 @@
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">9</div><h2>Partage de documents</h2></div>
+    <div class="head"><div class="num">10</div><h2>Partage de documents</h2></div>
     <p>Unessia vous permet de transmettre un document à un tiers via un lien sécurisé. Ce partage n'a lieu que sur votre action explicite, et vous en gardez le contrôle :</p>
     <ul>
       <li>Chaque lien est à usage unique et expire automatiquement au bout de 24 heures.</li>
@@ -133,7 +170,7 @@
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">10</div><h2>Sous-traitants et services tiers</h2></div>
+    <div class="head"><div class="num">11</div><h2>Sous-traitants et services tiers</h2></div>
     <p>Les prestataires externes suivants, indispensables au fonctionnement du service, reçoivent une partie limitée de vos données :</p>
     <ul>
       <li><strong>Supabase</strong> — héberge la base de données et vos documents, sur une infrastructure Amazon Web Services située à Paris. Aucun contenu de document n'est analysé par ce prestataire.</li>
@@ -150,17 +187,17 @@
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">11</div><h2>Transferts de données hors Union européenne</h2></div>
+    <div class="head"><div class="num">12</div><h2>Transferts de données hors Union européenne</h2></div>
     <p>Vos données sont hébergées en France (Paris) et, pour l'envoi des courriels, en Irlande. Certains de nos sous-traitants (Supabase, Vercel, Stripe, Resend, ip-api.com, Apple, RevenueCat) sont établis hors de l'Union européenne, principalement aux États-Unis, et peuvent à ce titre traiter une partie limitée de vos données (adresse email, adresse IP, informations de paiement, statut d'abonnement) depuis ces pays. Ces transferts sont encadrés par les garanties appropriées prévues par le RGPD, telles que les clauses contractuelles types adoptées par la Commission européenne. Le contenu de vos documents n'est concerné par aucun de ces transferts : il demeure sur nos infrastructures françaises.</p>
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">12</div><h2>Durée de conservation</h2></div>
+    <div class="head"><div class="num">13</div><h2>Durée de conservation</h2></div>
     <p>Les données personnelles sont conservées pendant toute la durée d'activité du compte utilisateur. Les liens de partage de documents expirent automatiquement selon le délai que vous définissez, ou après leur premier usage. En cas de désactivation de l'espace professionnel, les données professionnelles associées sont supprimées immédiatement et de façon irréversible. La suppression du compte s'effectue immédiatement lorsqu'elle est demandée depuis l'application, dans vos paramètres : l'ensemble des données est effacé sans délai et sans intervention de notre part. Si la demande est adressée à l'assistance, elle est traitée dans un délai maximum de 72 heures, ramené à 24 heures pour les forfaits Premium et Pro. Par exception, le journal des accès à vos documents est conservé douze mois indépendamment de votre compte, pour les motifs exposés dans la section qui lui est consacrée. Un délai technique résiduel de 30 jours maximum peut s'appliquer pour les sauvegardes de sécurité, au terme duquel les données sont définitivement supprimées.</p>
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">13</div><h2>Droits de l'utilisateur</h2></div>
+    <div class="head"><div class="num">14</div><h2>Droits de l'utilisateur</h2></div>
     <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants sur vos données personnelles :</p>
     <ul>
       <li>Droit d'accès — obtenir une copie de vos données</li>
@@ -173,17 +210,17 @@
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">14</div><h2>Protection des mineurs</h2></div>
+    <div class="head"><div class="num">15</div><h2>Protection des mineurs</h2></div>
     <p>Unessia n'est pas destiné aux personnes de moins de 15 ans. Nous ne collectons pas sciemment de données personnelles concernant un mineur de moins de 15 ans sans le consentement du titulaire de l'autorité parentale. Si vous pensez qu'un mineur nous a communiqué des données sans autorisation, contactez-nous afin que nous procédions à leur suppression.</p>
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">15</div><h2>Cookies, traceurs et stockage local</h2></div>
+    <div class="head"><div class="num">16</div><h2>Cookies, traceurs et stockage local</h2></div>
     <p>Unessia utilise uniquement des cookies techniques strictement nécessaires au fonctionnement de l'application (maintien de la session, préférences de navigation). L'application conserve également certaines informations localement sur votre appareil (stockage local du navigateur) afin de mémoriser vos préférences et d'accélérer l'affichage ; ces informations ne quittent pas votre appareil. Aucun cookie publicitaire, de suivi ou de profilage commercial n'est utilisé. Aucune donnée n'est partagée avec des régies publicitaires ou à des fins de ciblage.</p>
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">16</div><h2>Journal des accès à vos documents</h2></div>
+    <div class="head"><div class="num">17</div><h2>Journal des accès à vos documents</h2></div>
     <p>Pour garantir la sécurité de vos documents et pouvoir vous informer précisément en cas d'incident, nous enregistrons les accès à leur contenu. Chaque enregistrement contient la date et l'heure, l'identifiant du document et du compte concerné, l'adresse IP et le navigateur utilisés, ainsi que le résultat de l'opération — y compris les tentatives refusées. Les opérations consignées sont les suivantes :</p>
     <ul>
       <li>Consultation et téléchargement d'un document</li>
@@ -195,7 +232,7 @@
   </div>
 
   <div class="card">
-    <div class="head"><div class="num">17</div><h2>Contact</h2></div>
+    <div class="head"><div class="num">18</div><h2>Contact</h2></div>
     <div class="contact-row"><span class="contact-label">Contact RGPD</span><a href="mailto:contact@unessia.fr">contact@unessia.fr</a></div>
     <div class="contact-row"><span class="contact-label">Site web</span><a href="https://unessia.fr">unessia.fr</a></div>
   </div>
