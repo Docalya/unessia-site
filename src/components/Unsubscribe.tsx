@@ -25,7 +25,7 @@ export default function Unsubscribe() {
       .then(data => {
         if (data.ok) {
           setStatus("ok");
-          setMessage("Vous êtes désinscrit du récap hebdomadaire. Vous pouvez le réactiver à tout moment dans les préférences de notification de votre espace Unessia.");
+          setMessage("Vous êtes désinscrit de la lettre mensuelle. Vous pouvez la réactiver à tout moment dans les réglages de votre espace Unessia, rubrique « Récapitulatif par email ».");
         } else {
           setStatus("error");
           setMessage(data.error ?? "Ce lien n'est pas valide ou a expiré.");
@@ -38,15 +38,15 @@ export default function Unsubscribe() {
   }, []);
 
   return (
-    <div style={{ minHeight: "100vh", background: "#FBF7EF", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px", fontFamily: "Arial, Helvetica, sans-serif" }}>
-      <div style={{ maxWidth: 460, width: "100%", background: "#FFFFFF", borderRadius: 20, border: "1px solid #EFE5D8", padding: "40px 32px", textAlign: "center" }}>
+    <div style={{ minHeight: "100vh", background: "#FBF7EF", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px", fontFamily: "Nunito, Arial, Helvetica, sans-serif" }}>
+      <div style={{ maxWidth: 460, width: "100%", background: "#FFFFFF", borderRadius: 20, border: "1px solid #EADFCD", boxShadow: "0 30px 70px -40px rgba(62,46,30,0.35)", padding: "40px 32px", textAlign: "center" }}>
         <img src="/logo-unessia.png" width={44} height={44} alt="Unessia" style={{ display: "inline-block" }} />
-        <div style={{ fontSize: 24, letterSpacing: 5, fontWeight: 600, marginTop: 12, color: "#2F302F" }}>UNESSIA</div>
+        <div style={{ fontSize: 24, letterSpacing: 5, fontWeight: 600, marginTop: 12, color: "#3E2E1E" }}>UNESSIA</div>
         <div style={{ fontSize: 40, margin: "24px 0 8px" }}>
           {status === "loading" ? "⏳" : status === "ok" ? "✅" : "⚠️"}
         </div>
-        <p style={{ fontSize: 16, lineHeight: 1.6, color: "#444", margin: 0 }}>{message}</p>
-        <a href="https://app.unessia.fr" style={{ display: "inline-block", marginTop: 24, background: "#B98B53", color: "#FFFFFF", textDecoration: "none", padding: "13px 28px", borderRadius: 10, fontSize: 15, fontWeight: 700 }}>
+        <p style={{ fontSize: 16, lineHeight: 1.6, color: "#5C5045", margin: 0 }}>{message}</p>
+        <a href="https://app.unessia.fr" style={{ display: "inline-block", marginTop: 24, background: "#3E2E1E", color: "#FFFFFF", textDecoration: "none", padding: "13px 28px", borderRadius: 999, fontSize: 15, fontWeight: 700 }}>
           Retour à Unessia
         </a>
       </div>

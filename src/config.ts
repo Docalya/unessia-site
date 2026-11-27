@@ -5,15 +5,20 @@
 /** URL de l'application (toutes les CTA pointent ici). */
 export const APP_URL = "https://app.unessia.fr";
 
-/** Libellé du bouton principal, cohérent sur toute la page. */
-export const CTA_LABEL = "Créer mon compte";
+/** Libellé du bouton de l'en-tête. */
+export const CTA_LABEL = "Créer mon espace";
 
-/** Liens de navigation (ancres vers les sections). */
+/** Libellé du bouton principal (hero, dernière section). */
+export const CTA_PRINCIPAL = "Créer mon espace gratuitement";
+
+/** Liens de navigation (ancres vers les sections). Les anciennes ancres
+ *  (#fonctionnalites, #comment-ca-marche, #espace-pro, #securite, #forfaits)
+ *  existent toujours dans la page : les liens déjà partagés restent valables. */
 export const NAV_LINKS = [
   { label: "Fonctionnalités", href: "#fonctionnalites" },
-  { label: "Comment ça marche", href: "#comment-ca-marche" },
+  { label: "Univers", href: "#univers" },
   { label: "Indépendants", href: "#espace-pro" },
-  { label: "Sécurité", href: "#securite" },
+  { label: "Confidentialité", href: "#securite" },
   { label: "Tarifs", href: "#forfaits" },
 ] as const;
 
@@ -26,3 +31,7 @@ export const LEGAL_LINKS = [
   { label: "Remboursement",     href: "/remboursement.html" },
   { label: "Aide",              href: "/aide.html" },
 ] as const;
+
+/** « Hébergé en France » n'est affiché que lorsque la région de l'hébergement
+ *  a été vérifiée (réglages du projet Supabase). Passer à true après vérification. */
+export const HEBERGEMENT_FRANCE_VERIFIE = false;

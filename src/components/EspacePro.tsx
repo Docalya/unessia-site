@@ -5,10 +5,8 @@ import { fadeUp, stagger, viewportOnce } from "../lib/motion";
 
 function Phone({ src, alt, className = "" }: { src: string; alt: string; className?: string }) {
   return (
-    <div className={`relative mx-auto w-full max-w-[280px] rounded-[42px] border border-beige-deep bg-white p-2.5 shadow-float ${className}`}>
-      <div className="overflow-hidden rounded-[34px] border border-beige-deep/50">
-        <img src={src} alt={alt} loading="lazy" className="block w-full" />
-      </div>
+    <div className={`mx-auto w-full max-w-[280px] overflow-hidden rounded-[34px] bg-white shadow-float ring-1 ring-ink/5 ${className}`}>
+      <img src={src} alt={alt} loading="lazy" className="block w-full" />
     </div>
   );
 }
@@ -28,32 +26,32 @@ const ecrans = [
 
 export default function EspacePro() {
   return (
-    <section id="espace-pro" className="px-5 py-9 sm:px-8 sm:py-20">
+    // Un ton plus professionnel : fond sauge très clair, mêmes formes et mêmes ors.
+    <section id="espace-pro" className="bg-sage-mist px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-6xl">
-        <div className="grid items-center gap-9 sm:gap-14 lg:grid-cols-2 lg:gap-16">
-          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={viewportOnce}>
-            <motion.span variants={fadeUp} className="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-ink-soft">
-              <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-sage" />
-              Micro-entreprise
-            </motion.span>
-            <motion.h2 variants={fadeUp} className="font-display mt-5 text-[2.1rem] font-medium leading-[1.1] text-ink sm:text-[3rem]">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={viewportOnce} className="min-w-0">
+            <motion.p variants={fadeUp} className="inline-flex items-center gap-2 rounded-full border border-sage/30 bg-white/70 px-3.5 py-1.5 text-[12px] font-extrabold uppercase tracking-[0.2em] text-sage-deep">
+              Espace Pro · Micro-entreprise
+            </motion.p>
+            <motion.h2 variants={fadeUp} className="font-display mt-5 text-[2rem] font-extrabold leading-[1.12] text-ink sm:text-[2.9rem]">
               Un espace pro, <span className="text-sage-deep">cloisonné du personnel.</span>
             </motion.h2>
-            <motion.p variants={fadeUp} className="mt-5 max-w-md text-[1.05rem] leading-relaxed text-ink-soft">
+            <motion.p variants={fadeUp} className="mt-5 max-w-md text-[1.03rem] leading-relaxed text-ink-soft sm:text-[1.12rem]">
               Vos justificatifs, vos recettes et vos dépenses vivent dans un espace
               séparé. On bascule de l'un à l'autre d'un geste, sans jamais les mélanger.
             </motion.p>
             <motion.ul variants={fadeUp} className="mt-8 space-y-3.5">
               {atouts.map((a) => (
-                <li key={a} className="flex items-start gap-3 text-[15px] leading-relaxed text-ink">
-                  <span aria-hidden="true" className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-beige-deep bg-cream-deep text-sage-deep">
-                    <Check className="h-3.5 w-3.5" strokeWidth={2.2} />
+                <li key={a} className="flex items-start gap-3 text-[15.5px] leading-relaxed text-ink">
+                  <span aria-hidden="true" className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-sage-deep ring-1 ring-sage/25">
+                    <Check className="h-3.5 w-3.5" strokeWidth={2.4} />
                   </span>
                   {a}
                 </li>
               ))}
             </motion.ul>
-            <motion.a variants={fadeUp} href={APP_URL} className="group mt-9 inline-flex items-center gap-1.5 text-[15px] font-medium text-ink transition-colors hover:text-sage-deep">
+            <motion.a variants={fadeUp} href={APP_URL} className="group mt-9 inline-flex items-center gap-1.5 border-b border-sage/40 pb-0.5 text-[16px] font-bold text-ink transition-colors hover:text-sage-deep">
               Ouvrir mon espace pro
               <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">→</span>
             </motion.a>
@@ -64,27 +62,13 @@ export default function EspacePro() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOnce}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="relative mx-auto h-[470px] w-full max-w-[460px] sm:h-[580px]"
           >
-            <Phone src={ecrans[0].src} alt={ecrans[0].alt} />
+            <div className="absolute left-0 top-12 w-[52%] -rotate-[4deg] opacity-95"><Phone src={ecrans[2].src} alt={ecrans[2].alt} /></div>
+            <div className="absolute right-0 top-12 w-[52%] rotate-[4deg] opacity-95"><Phone src={ecrans[1].src} alt={ecrans[1].alt} /></div>
+            <div className="absolute left-1/2 top-0 z-10 w-[60%] -translate-x-1/2"><Phone src={ecrans[0].src} alt={ecrans[0].alt} /></div>
           </motion.div>
         </div>
-
-        <motion.div
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-          className="mt-12 sm:mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8"
-        >
-          {ecrans.slice(1).map((s) => (
-            <motion.div key={s.label} variants={fadeUp} className="flex flex-col items-center">
-              <Phone src={s.src} alt={s.alt} className="max-w-[230px]" />
-              <span className="mt-6 text-[12px] font-semibold uppercase tracking-[0.14em] text-ink-soft">
-                {s.label}
-              </span>
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );

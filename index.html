@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#faf8f3" />
+    <meta name="theme-color" content="#fbf7ef" />
 
     <!-- Primary SEO -->
     <title>Unessia — L'administration, enfin sereine</title>
@@ -40,13 +40,18 @@
     />
     <meta name="twitter:image" content="https://unessia.fr/og-image.jpg" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Image du hero chargée en priorité (affichée dès l'ouverture) -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/serenite/hero-magnolias-2400.webp"
+      imagesrcset="/serenite/hero-magnolias-1200.webp 1200w, /serenite/hero-magnolias-2400.webp 2400w"
+      imagesizes="100vw"
     />
+
+    <!-- Police de l'application, hébergée sur le site (aucune requête vers Google) -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/nunito-latin-wght-normal.woff2" crossorigin />
   </head>
   <body>
     <div id="root"></div>
