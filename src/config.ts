@@ -15,7 +15,7 @@ export const CTA_PRINCIPAL = "Créer mon espace gratuitement";
  *  (#fonctionnalites, #comment-ca-marche, #espace-pro, #securite, #forfaits)
  *  existent toujours dans la page : les liens déjà partagés restent valables. */
 export const NAV_LINKS = [
-  { label: "Fonctionnalités", href: "#fonctionnalites" },
+  { label: "Fonctionnalités", href: "#comment-ca-marche" }, // section « L'application »
   { label: "Univers", href: "#univers" },
   { label: "Indépendants", href: "#espace-pro" },
   { label: "Confidentialité", href: "#securite" },
